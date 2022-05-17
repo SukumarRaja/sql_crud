@@ -8,6 +8,7 @@ class EmployeeDetails extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    EmployeeController.to.fetchEmployeesFromDatabase();
     return Scaffold(
       body: Container(
         padding: const EdgeInsets.all(16.0),
